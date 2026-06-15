@@ -70,7 +70,7 @@
           <p class="eyebrow">First workout</p>
           <h2 id="book-title">Book an evaluation session.</h2>
           <p>
-            Share the player’s level and goals. Sam will recommend the right starting program and send open times.
+            Pick the day and time that works best. Sam will confirm the session and recommend the right starting program.
           </p>
           <ul class="booking-offers" aria-label="Available training tools">
             <li>Vertimax resistance-band training for vertical jump and explosiveness</li>
@@ -100,6 +100,23 @@
               <option>Adult</option>
             </select>
           </div>
+          <div class="field">
+            <label for="session-date">Preferred day</label>
+            <input id="session-date" name="preferred_day" type="date" required>
+          </div>
+          <div class="field">
+            <label for="session-time">Preferred start time</label>
+            <input id="session-time" name="preferred_start_time" type="time" required>
+          </div>
+          <div class="field full">
+            <label for="session-backup">Backup day or time</label>
+            <input
+              id="session-backup"
+              name="backup_day_or_time"
+              type="text"
+              placeholder="Example: Saturday afternoon or any weekday evening"
+            >
+          </div>
           <div class="field full">
             <label for="player-goal">Training goal</label>
             <textarea
@@ -109,7 +126,7 @@
               placeholder="Example: improve shooting consistency, vertical jump, or finishing with contact"
             ></textarea>
           </div>
-          <button class="button primary full" type="submit">Request Times</button>
+          <button class="button primary full" type="submit">Book Session</button>
           <p class="form-note">Requests are emailed to Sam at wwjdsr@gmail.com.</p>
         </form>
       </section>
