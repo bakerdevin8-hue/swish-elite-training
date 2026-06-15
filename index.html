@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swish Elite Training</title>
+    <meta
+      name="description"
+      content="Swish Elite Training, founded by Sam Rosario, offers skill development, Vertimax vertical-jump training, Grind Machine shooting reps, and game-read basketball training."
+    >
+    <link rel="preload" href="hero-court.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Swish Elite Training home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Swish Elite Training</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#coach">Coach</a>
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Schedule</a>
+        <a class="nav-cta" href="#book">Book a Session</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Basketball skill development in small groups and private sessions</p>
+          <h1 id="hero-title">Train with purpose. Play with pace.</h1>
+          <p class="hero-copy">
+            Swish Elite Training builds confident scorers, sharper decision-makers, and athletes who can translate drills into live game moments with founder and head trainer Sam Rosario.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#book">Start Training</a>
+            <a class="button secondary" href="#programs">View Programs</a>
+          </div>
+          <dl class="hero-stats" aria-label="Training highlights">
+            <div>
+              <dt>4:1</dt>
+              <dd>small group ratio</dd>
+            </div>
+            <div>
+              <dt>90</dt>
+              <dd>minute sessions</dd>
+            </div>
+            <div>
+              <dt>12+</dt>
+              <dd>weeks to peak form</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="intro" aria-label="Training philosophy">
+        <p>
+          Every workout has a theme, a scoring context, and a measurable finish. Players leave knowing what improved, what to repeat, and how it shows up on the floor.
+        </p>
+      </section>
+
+      <section id="book" class="booking" aria-labelledby="book-title">
+        <div>
+          <p class="eyebrow">First workout</p>
+          <h2 id="book-title">Book an evaluation session.</h2>
+          <p>
+            Share the player’s level and goals. Sam will recommend the right starting program and send open times.
+          </p>
+          <ul class="booking-offers" aria-label="Available training tools">
+            <li>Vertimax resistance-band training for vertical jump and explosiveness</li>
+            <li>Grind Machine shooting sessions to get up more shots with automatic rebounding</li>
+          </ul>
+        </div>
+        <form
+          class="booking-form"
+          action="https://formsubmit.co/wwjdsr@icloud.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Swish Elite Training evaluation request">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="field">
+            <label for="player-name">Player name</label>
+            <input id="player-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="player-level">Level</label>
+            <select id="player-level" name="level" required>
+              <option value="">Select level</option>
+              <option>Middle school</option>
+              <option>High school</option>
+              <option>College</option>
+              <option>Adult</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="player-goal">Training goal</label>
+            <textarea
+              id="player-goal"
+              name="goal"
+              rows="4"
+              placeholder="Example: improve shooting consistency, vertical jump, or finishing with contact"
+            ></textarea>
+          </div>
+          <button class="button primary full" type="submit">Request Times</button>
+          <p class="form-note">Requests are emailed to Sam at wwjdsr@icloud.com.</p>
+        </form>
+      </section>
+
+      <section id="coach" class="coach" aria-labelledby="coach-title">
+        <div>
+          <p class="eyebrow">Founder and head trainer</p>
+          <h2 id="coach-title">Led by Sam Rosario.</h2>
+        </div>
+        <p>
+          Sam Rosario runs Swish Elite Training with a player-first approach: sharp fundamentals, game-speed reps, clear feedback, and workouts that build confidence under pressure.
+        </p>
+      </section>
+
+      <section id="programs" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Programs</p>
+          <h2>Choose the work that matches your season.</h2>
+        </div>
+        <div class="program-grid">
+          <article class="program-card">
+            <span class="card-icon">01</span>
+            <h3>Private Skill Build</h3>
+            <p>Individual sessions for handle, shooting mechanics, finishing package, footwork, and position-specific reads.</p>
+            <ul>
+              <li>Film-backed player plan</li>
+              <li>Weekly take-home reps</li>
+              <li>Progress scorecard</li>
+            </ul>
+          </article>
+          <article class="program-card featured">
+            <span class="card-icon">02</span>
+            <h3>Small Group Lab</h3>
+            <p>Competitive workouts with tight coach feedback, live constraints, and game-speed pressure.</p>
+            <ul>
+              <li>2-4 athletes per group</li>
+              <li>Decision drills and contests</li>
+              <li>Monthly testing night</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <span class="card-icon">03</span>
+            <h3>Vertimax Power Work</h3>
+            <p>Resistance-band workouts on the Vertimax system to build explosive strength, body control, and a stronger vertical jump.</p>
+            <ul>
+              <li>Jump mechanics and landing control</li>
+              <li>Band-resisted first-step work</li>
+              <li>Lower-body power circuits</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <span class="card-icon">04</span>
+            <h3>Grind Machine Shooting</h3>
+            <p>The Grind Machine rebounds for players so they can get up more quality shots, build rhythm, and keep reps moving under fatigue.</p>
+            <ul>
+              <li>High-rep catch-and-shoot work</li>
+              <li>Game-speed spot shooting</li>
+              <li>Faster reps without chasing rebounds</li>
+            </ul>
+          </article>
+          <article class="program-card">
+            <span class="card-icon">05</span>
+            <h3>In-Season Tune-Up</h3>
+            <p>Low-volume, high-quality sessions that keep touch, rhythm, and confidence sharp between games.</p>
+            <ul>
+              <li>Shot diet maintenance</li>
+              <li>Recovery-aware workload</li>
+              <li>Role-specific game prep</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="schedule" class="section schedule">
+        <div class="section-heading">
+          <p class="eyebrow">Weekly flow</p>
+          <h2>Sessions available before school, after school, and on weekends.</h2>
+        </div>
+        <div class="timeline" aria-label="Training schedule">
+          <div class="time-row">
+            <span>Weekdays</span>
+            <p>Early sessions before school are available every weekday.</p>
+          </div>
+          <div class="time-row">
+            <span>Afternoons</span>
+            <p>Afternoon and evening sessions are available throughout the week.</p>
+          </div>
+          <div class="time-row">
+            <span>Weekends</span>
+            <p>Weekend training is available anytime, including morning testing, shooting ladders, and live situational play.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Swish Elite Training</p>
+      <a href="mailto:wwjdsr@icloud.com">wwjdsr@icloud.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
