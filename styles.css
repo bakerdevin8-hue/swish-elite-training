@@ -266,6 +266,12 @@ section {
   line-height: 1.7;
 }
 
+.media-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
 .media-frame {
   overflow: hidden;
   border: 1px solid rgba(255, 250, 240, 0.18);
@@ -277,7 +283,7 @@ section {
 .media-frame video {
   display: block;
   width: 100%;
-  max-height: 620px;
+  max-height: 560px;
   background: #101513;
 }
 
@@ -444,6 +450,14 @@ section {
   line-height: 1.05;
 }
 
+.pricing-note {
+  border-left: 3px solid var(--ink);
+  padding-left: 12px;
+  color: rgba(23, 23, 23, 0.78);
+  font-weight: 780;
+  line-height: 1.45;
+}
+
 .field,
 label {
   display: grid;
@@ -565,6 +579,12 @@ textarea {
 
   .program-card {
     min-height: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .media-gallery {
+    grid-template-columns: 1fr;
   }
 }
 
