@@ -61,6 +61,22 @@
         </p>
       </section>
 
+      <section class="media-showcase" aria-labelledby="media-title">
+        <div class="media-copy">
+          <p class="eyebrow">Training in motion</p>
+          <h2 id="media-title">See the work up close.</h2>
+          <p>
+            Live reps, focused coaching, and game-speed training give players a real feel for how Swish Elite sessions run.
+          </p>
+        </div>
+        <div class="media-frame">
+          <video controls playsinline preload="metadata">
+            <source src="training-session.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
       <section id="book" class="booking" aria-labelledby="book-title">
         <div>
           <p class="eyebrow">First workout</p>
@@ -73,58 +89,19 @@
             <li>Grind Machine shooting sessions to get up more shots with automatic rebounding</li>
           </ul>
         </div>
-        <form
-          class="booking-form"
-          action="https://formsubmit.co/wwjdsr@gmail.com"
-          method="POST"
-        >
-          <input type="hidden" name="_subject" value="New Swish Elite Training evaluation request">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://bakerdevin8-hue.github.io/swish-elite-training/#book">
-          <div class="field">
-            <label for="player-name">Player name</label>
-            <input id="player-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="player-level">Level</label>
-            <select id="player-level" name="level" required>
-              <option value="">Select level</option>
-              <option>Middle school</option>
-              <option>High school</option>
-              <option>College</option>
-              <option>Adult</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="session-date">Preferred day</label>
-            <input id="session-date" name="preferred_day" type="date" required>
-          </div>
-          <div class="field">
-            <label for="session-time">Preferred start time</label>
-            <input id="session-time" name="preferred_start_time" type="time" required>
-          </div>
-          <div class="field full">
-            <label for="session-backup">Backup day or time</label>
-            <input
-              id="session-backup"
-              name="backup_day_or_time"
-              type="text"
-              placeholder="Example: Saturday afternoon or any weekday evening"
-            >
-          </div>
-          <div class="field full">
-            <label for="player-goal">Training goal</label>
-            <textarea
-              id="player-goal"
-              name="goal"
-              rows="4"
-              placeholder="Example: improve shooting consistency, vertical jump, or finishing with contact"
-            ></textarea>
-          </div>
-          <button class="button primary full" type="submit">Book Session</button>
-          <p class="form-note">Requests are emailed to Sam at wwjdsr@gmail.com.</p>
-        </form>
+        <div class="booking-panel">
+          <p class="booking-panel-title">Choose a real available time.</p>
+          <p>
+            The calendar opens in Google Calendar so players can pick from Sam's available sessions and receive the booking details automatically.
+          </p>
+          <a
+            class="button primary full"
+            href="https://calendar.app.google/X3TQxQN6a7B9HiAQ9"
+            target="_blank"
+            rel="noreferrer"
+          >Book on Google Calendar</a>
+          <p class="form-note">Questions can still be sent to wwjdsr@gmail.com.</p>
+        </div>
       </section>
 
       <section id="coach" class="coach" aria-labelledby="coach-title">
@@ -171,7 +148,7 @@
               <li>Weekly take-home reps</li>
             </ul>
           </article>
-          <article class="program-card featured">
+          <article class="program-card">
             <span class="card-icon">04</span>
             <h3>Small Group Lab</h3>
             <p>Competitive workouts with tight coach feedback, live constraints, and game-speed pressure.</p>
@@ -185,8 +162,7 @@
             <h3>In-Season Tune-Up</h3>
             <p>Low-volume, high-quality sessions that keep touch, rhythm, and confidence sharp between games.</p>
             <ul>
-              <li>Shot diet maintenance</li>
-              <li>Recovery-aware workload</li>
+              <li>Shot maintenance</li>
               <li>Role-specific game prep</li>
             </ul>
           </article>

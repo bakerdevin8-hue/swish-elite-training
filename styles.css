@@ -250,6 +250,37 @@ section {
   font-weight: 780;
 }
 
+.media-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
+  padding: clamp(62px, 9vw, 120px) clamp(20px, 6vw, 82px);
+  color: var(--white);
+  background: var(--green);
+}
+
+.media-copy p:not(.eyebrow) {
+  max-width: 560px;
+  color: rgba(255, 250, 240, 0.78);
+  line-height: 1.7;
+}
+
+.media-frame {
+  overflow: hidden;
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  border-radius: 8px;
+  background: #101513;
+  box-shadow: var(--shadow);
+}
+
+.media-frame video {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+  background: #101513;
+}
+
 .coach {
   display: grid;
   grid-template-columns: minmax(220px, 0.78fr) minmax(0, 1fr);
@@ -375,12 +406,6 @@ section {
   background: var(--gold);
 }
 
-.booking-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
 .booking-offers {
   display: grid;
   gap: 10px;
@@ -397,10 +422,36 @@ section {
   line-height: 1.45;
 }
 
+.booking-panel {
+  display: grid;
+  gap: 18px;
+  align-content: center;
+  min-height: 320px;
+  border: 1px solid rgba(23, 23, 23, 0.18);
+  border-radius: 8px;
+  padding: clamp(24px, 4vw, 44px);
+  background: rgba(255, 250, 240, 0.7);
+}
+
+.booking-panel p {
+  margin: 0;
+}
+
+.booking-panel-title {
+  color: var(--ink);
+  font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
 .field,
 label {
   display: grid;
   gap: 8px;
+}
+
+.field {
+  min-width: 0;
 }
 
 label {
@@ -416,6 +467,7 @@ input,
 select,
 textarea {
   width: 100%;
+  min-width: 0;
   border: 1px solid rgba(23, 23, 23, 0.22);
   border-radius: 8px;
   padding: 14px 13px;
@@ -454,6 +506,12 @@ textarea {
 .site-footer p {
   margin: 0;
   font-weight: 850;
+}
+
+@media (max-width: 1100px) {
+  .booking {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 860px) {
@@ -500,6 +558,7 @@ textarea {
   .section-heading,
   .program-grid,
   .coach,
+  .media-showcase,
   .booking {
     grid-template-columns: 1fr;
   }
@@ -533,8 +592,7 @@ textarea {
     min-width: 118px;
   }
 
-  .time-row,
-  .booking-form {
+  .time-row {
     grid-template-columns: 1fr;
   }
 
