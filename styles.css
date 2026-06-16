@@ -268,7 +268,7 @@ section {
 
 .media-gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
 }
 
@@ -304,6 +304,25 @@ section {
   line-height: 1.55;
 }
 
+.coach-profile {
+  display: grid;
+  gap: 22px;
+}
+
+.coach-profile img,
+.program-card-media {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.coach-profile img {
+  max-height: 520px;
+  object-position: center 34%;
+  box-shadow: var(--shadow);
+}
+
 .section {
   padding: clamp(62px, 9vw, 120px) clamp(20px, 6vw, 82px);
 }
@@ -328,6 +347,11 @@ section {
   border-radius: 8px;
   padding: 26px;
   background: rgba(255, 250, 240, 0.64);
+}
+
+.program-card-media {
+  aspect-ratio: 4 / 3;
+  margin: 16px 0 14px;
 }
 
 .program-card.featured {
