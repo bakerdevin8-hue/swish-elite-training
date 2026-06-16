@@ -120,14 +120,51 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(13, 15, 14, 0.88) 0%, rgba(13, 15, 14, 0.68) 38%, rgba(13, 15, 14, 0.28) 72%, rgba(13, 15, 14, 0.6) 100%),
-    url("hero-court.png") center / cover;
+    linear-gradient(90deg, rgba(13, 15, 14, 0.92) 0%, rgba(13, 15, 14, 0.74) 39%, rgba(13, 15, 14, 0.18) 74%, rgba(13, 15, 14, 0.42) 100%),
+    url("hero-basketball-realistic.png") 64% center / cover;
   transform: scale(1.01);
+}
+
+.hero-logo-lockup {
+  position: absolute;
+  z-index: 1;
+  top: clamp(118px, 18vh, 190px);
+  right: clamp(22px, 6vw, 96px);
+  display: grid;
+  justify-items: end;
+  width: min(390px, 32vw);
+  color: var(--white);
+  text-align: right;
+  text-transform: uppercase;
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.42));
+  pointer-events: none;
+}
+
+.hero-logo-lockup span,
+.hero-logo-lockup strong {
+  display: block;
+  line-height: 0.86;
+  letter-spacing: 0;
+}
+
+.hero-logo-lockup span {
+  font-size: clamp(3.2rem, 6vw, 7rem);
+  font-weight: 950;
+}
+
+.hero-logo-lockup strong {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 6px solid var(--gold);
+  color: var(--gold);
+  font-size: clamp(2.5rem, 4.7vw, 5.4rem);
+  font-weight: 950;
+  letter-spacing: 0.18em;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   align-self: end;
   width: min(760px, calc(100% - 40px));
   padding: 130px 0 8vh clamp(20px, 6vw, 82px);
@@ -584,8 +621,26 @@ textarea {
 
   .hero-media {
     background:
-      linear-gradient(180deg, rgba(13, 15, 14, 0.56) 0%, rgba(13, 15, 14, 0.78) 58%, rgba(13, 15, 14, 0.94) 100%),
-      url("hero-court.png") 58% center / cover;
+      linear-gradient(180deg, rgba(13, 15, 14, 0.54) 0%, rgba(13, 15, 14, 0.82) 55%, rgba(13, 15, 14, 0.94) 100%),
+      url("hero-basketball-realistic.png") 66% center / cover;
+  }
+
+  .hero-logo-lockup {
+    top: 112px;
+    right: 20px;
+    width: min(280px, 62vw);
+    opacity: 0.86;
+  }
+
+  .hero-logo-lockup span {
+    font-size: clamp(2.5rem, 14vw, 4.4rem);
+  }
+
+  .hero-logo-lockup strong {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top-width: 4px;
+    font-size: clamp(2rem, 10vw, 3.4rem);
   }
 
   .hero-content {
